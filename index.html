@@ -6,131 +6,132 @@
   <title>Kickstart Your Training</title>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    @font-face {
-      font-family: 'Varet Gothic';
-  src: url('VaretGothic-BoldItalic.otf') format('opentype');
-  text-transform: uppercase; 
-  font-weight: normal;
-  font-style: normal;
-    }
-    * { box-sizing: border-box; }
-    body {
-      font-family: 'Lato', sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #222323;
-      color: #ffffff;
-      overflow-x: hidden;
-    }
-    .slider {
-      display: flex;
-      flex-direction: row;
-      width: 100vw;
-      height: 100vh;
-      overflow-x: scroll;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-    }
-    .slide {
-      flex: 0 0 100%;
-      height: 100vh;
-      padding: 2rem;
-      scroll-snap-align: start;
-      background: #2c2d2d;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    h1, h2 {
-      font-family: 'Varet Gothic', sans-serif;
-      color: #ffcd68;
-      margin: 0.5rem 0;
-      text-transform: uppercase; 
-      font-weight: normal;
-      max-width: 600px;
-    }
-    h1 {
-      font-size: 2.5rem;
-      font-weight: bold;
-    }
-    h2, {
-      font-size: 2.5rem;
-      font-weight: normal;
-    }
-
-    h3 {
-      font-family: 'Lato', sans-serif;
-      font-size: 1.5rem;
-      font-weight: normal;
-      max-width: 600px;
-    }
-    p, ul, ol {
-      max-width: 600px;
-  
-    }
-    ul, ol {
-      padding-left: 0;
-      list-style-type: none;
-    }
-    ul li, ol li {
-      margin-bottom: 0.5rem;
-    }
-    a { color: #BF994C; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .indicators {
-      position: fixed;
-      bottom: 1rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-      z-index: 10;
-    }
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #464646;
-    }
-    .dot.active { background-color: #BF994C; }
-    .progress-bar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 4px;
-      background-color: #BF994C;
-      width: 0%;
-      z-index: 10;
-    }
-    .nav-buttons {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
-    }
-    .nav-button {
-      font-size: 2rem;
-      background: none;
-      border: none;
-      color: #BF994C;
-      cursor: pointer;
-    }
-    .app-links {
-      margin-top: 2rem;
-    }
-    .pill-button {
-      display: inline-block;
-      padding: 0.5rem 1rem;
-      border-radius: 999px;
-      background-color: #BF994C;
-      color: #222323;
-      margin: 0.25rem;
-      font-weight: bold;
-      text-decoration: none;
-    }
-    .pill-button:hover { background-color: #ffcd68; }
-    strong { color: #ffcd68; }
+  @font-face {
+    font-family: 'Varet Gothic';
+    src: url('VaretGothic-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #222323;
+    color: #ffffff;
+    overflow-x: hidden;
+  }
+  .slider {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+  .slide {
+    flex: 0 0 100%;
+    height: 100vh;
+    padding: 2rem;
+    scroll-snap-align: start;
+    background: #2c2d2d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  h1, h2 {
+    font-family: 'Varet Gothic', sans-serif;
+    color: #ffcd68;
+    margin: 0.5rem 0;
+    text-transform: uppercase; 
+    font-weight: normal;
+    max-width: 600px;
+    font-size: 1.5rem;      /* Reduced from 2rem */
+    line-height: 1.05;      /* Slightly tighter */
+  }
+  h1 {
+    font-weight: bold;
+    font-size: 1.5rem;      /* Slightly smaller */
+  }
+  h2 {
+    font-weight: normal;
+    font-size: 1.2rem;      /* Slightly smaller */
+  }
+  h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    font-weight: normal;
+    max-width: 600px;
+  }
+  p, ul, ol {
+    max-width: 600px;
+    line-height: 1.6;
+    font-size: 0.95rem; /* Smaller body text */
+  }
+  ul, ol {
+    padding-left: 0;
+    list-style-type: none;
+  }
+  ul li, ol li {
+    margin-bottom: 0.5rem;
+  }
+  a { color: #BF994C; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .indicators {
+    position: fixed;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+  }
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #464646;
+  }
+  .dot.active { background-color: #BF994C; }
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background-color: #BF994C;
+    width: 0%;
+    z-index: 10;
+  }
+  .nav-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .nav-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #BF994C;
+    cursor: pointer;
+  }
+  .app-links {
+    margin-top: 2rem;
+  }
+  .pill-button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    background-color: #BF994C;
+    color: #222323;
+    margin: 0.25rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .pill-button:hover { background-color: #ffcd68; }
+  strong { color: #ffcd68; }
   </style>
 </head>
 <body>
@@ -138,49 +139,142 @@
   <div class="slider" id="slider"></div>
   <div class="indicators" id="indicators"></div>
   <script>
-    const slides = [
-      "<h1>Welcome to my super simple no-bullshit guide to kickstarting your training.</h1><p>This will take you about 5–10 minutes to run through, so grab a fun drink and dig in 🥤</p>",
-      "<h2>This guide contains all the essential ‘need to know’ info for a first-time gym-goer to understand how to read their workout programming.</h2><p>I have some deeper dives on these topics in the resource section of the app, if you want to know more, but in this guide I am giving you the bare essentials to kickstart your training journey so you can hop in straight away!</p>",
-      "<h2>Have a read through the next few slides and sure to let me know if you have any questions!</h2><p>If you’re a 121 or Fast & Ferocious team member, you can DM me directly, or if you’re on one of my Superhuman workout programs, you can post any questions you have in the relevant thread in the Telegram community group.</p>",
-      "<h2>'Why is this so important Lucinda?'</h2><p> We wanna know how to read workout programming well, so we don’t have to second-guess it during a session, have it be another barrier to training OR get in the way of your ferocious strength gains.</p><p>The good thing about this is that it’s pretty standard across the board, so if you spend another 5 minutes with me right now, you'll be set for life 😉</p>",
-      "<h2>We break workout programming down into these five categories ⤵️</h2><p>🔂 Reps</p><p>🔁 Sets </p><p>😴 Rest</p><p>💨 Tempo</p><p>🔥 Intensity</p>",
-      "<h2>🔂 Reps</h2><p>How many repetitions of an exercise we do consecutively.</p><p style='color:#ffcd68;'>Example: 10 x Bodyweight Squats.</p>",
-      "<h2>🔁 Sets</h2><p>A group of reps performed together, usually with a rest period in between to recover.</p><p style='color:#ffcd68;'>Example: 3 x 10 Bodyweight Squats.</p>",
-      "<h2>😴 Rest</h2><p>The time we spend recovering after and between sets.</p<p style='color:#ffcd68;'>Example: 3 x 10 Bodyweight Squats - 60s rest</p>",
-      "<h2>💨 Tempo</h2><p>The speed at which we move the load through each phase of a lift, normally including lifting, pausing, and lowering within an exercise.</p><p style='color:#ffcd68;'>Example: 3 x 10 Bodyweight Squats - 3121 - 60s Rest</p><p><i>💡 I have a more detailed video overview of this in the resources section when you’re ready to explore it a little more!</p></i>",
-      "<h2>🔥 Intensity</h2><p>How challenging the thing we’re doing should be. This could apply to a full workout like a run or specific movements within a workout. We use Reps In Reserve (RIR) and Rate of Perceived Exertion (RPE) for this, and more advanced lifters will sometimes use percentages of their max lifts.</p><p style='color:#ffcd68;'>Example: 3 x 10 Bodyweight Squats - 3121 - 3RIR - 60s Rest</p><p><i>💡 I have a video overview of nailing your understanding of intensity in the resources section too!</i></p>",
-      "<h2>👽 Other Terms You Might Stumble Across In Your Sessions</h2><p>🦹🏼 <b>Supersets:</b> exercises performed one after another with no rest.</p><p>💯<b> Failure Sets:</b> labeled ‘F’ and mean take your set to complete muscle failure.</p><p>❤️‍🔥 <b>AMRAPs:</b> ‘As Many Rounds (or reps) As Possible’, usually within a time limit.</p>",
-      "<h2>😎 Final Tip</h2><p>🚨 Read the workout notes...plz 🚨</p>",
-      "<h2>📝 I use workout notes to communicate key tips or highlight important info</h2><p>Sometimes I might use them to explain <b>why</b> we are doing something so you know the purpose and the reason behind the work we're doing</p><p style='color:#ffcd68;'>If you don’t bother reading a workout note, it’s kinda like going to a movie when it’s already been on 30 minutes. You’ll probs get the jist of it, but you’ll never have the full picture. </p><p>🤡 Don’t be a clown — read your workout notes always!</p>",
-      "<h2>📱 Everfit App Guide</h2><p>My app its self is pretty intuitive in terms of user functionality. However, if anyone struggles with using it, the guide is super handy. Click the button below to head there right now, or bookmark it for later ⤵️</p><div class='app-links'><a class='pill-button' href='https://help.everfit.io/en/collections/2079376-client-app' target='_blank'>Everfit Guide</a></div>",
-      "<h2 style='color:#ffcd68;'>And that, my lovely friends, is how you read workout programming like a champ. Happy training!</h2><p>Lift Weights, Do Crime etc.</p><h2>💜</h2><div class='app-links'><a class='pill-button' href='https://app.everfit.io' target='_blank'>Return to Everfit</a></div>"
-    ];
+  const slides = [
+    `<img src="wave.png" alt="Waving memoji" style="width:120px; margin:1rem 0;">
+     <h1>Welcome to my super simple no-bullshit guide to kickstarting your training.</h1>
+     <p>This will take you about 5–10 minutes to run through, so grab a fun drink and dig in 🥤</p>`,
 
-    const slider = document.getElementById('slider');
-    const indicators = document.getElementById('indicators');
+    `<img src="idea.png" alt="Idea icon" style="width:112px; margin:1rem 0;">
+     <h2>This guide contains all the essential ‘need to know’ info for a first-time gym-goer to understand how to read their workout programming.</h2>
+     <p>I have some deeper dives on these topics in the resource section of the app, if you want to know more.</p>
+     <img src="resources.png" alt="Resources" style="width:70vw; max-width:70vw; margin:1rem 0;">
+     <p>But in this guide I am giving you the bare essentials to kickstart your training journey so you can hop in straight away!</p>`,
 
-    slides.forEach((html, i) => {
-      const slide = document.createElement('div');
-      slide.className = 'slide';
-      slide.innerHTML = html + `
+    `<img src="laptop.png" alt="Laptop" style="width:140px; margin:1rem 0;">
+     <h2>Have a read through the next few slides and sure to let me know if you have any questions!</h2>
+     <p>If you’re a 121 or Fast & Ferocious team member, you can DM me directly, or if you’re on one of my Superhuman workout programs, you can post any questions you have in the relevant thread in the Telegram community group.</p>`,
+
+    `<img src="shrug.png" alt="Shrug" style="width:140px; margin:1rem 0;">
+     <h2>'Why is this so important Lucinda?'</h2>
+     <p>We wanna know how to read workout programming well, so we don’t have to second-guess it during a session, have it be another barrier to training OR get in the way of your ferocious strength gains.</p>
+     <p>The good thing about this is that it’s pretty standard across the board, so if you spend 5 minutes with me right now, you'll be set for life 😉</p>`,
+
+    `<h2>We break workout programming down into these five categories ⤵️</h2>
+     <p>🔂 Reps</p>
+     <p>🔁 Sets</p>
+     <p>😴 Rest</p>
+     <p>💨 Tempo</p>
+     <p>🔥 Intensity</p>`,
+
+    `<h2>🔂 Reps</h2>
+     <p>How many repetitions of an exercise we do consecutively.</p>
+     <img src="reps.png" alt="Reps" style="width:80%; margin:1rem 0;">
+     <p style='color:#ffcd68;'>Example: 8-12 x Incline Dumbbell Press</p>`,
+
+    `<h2>🔁 Sets</h2>
+     <p>A group of reps performed together, usually with a rest period in between to recover.</p>
+     <img src="sets.png" alt="Sets" style="width:80%; margin:1rem 0;">
+     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press</p>`,
+
+    `<h2>😴 Rest</h2>
+     <p>The time we spend recovering after and between sets.</p>
+     <img src="rest.png" alt="Rest" style="width:80%; margin:1rem 0;">
+     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press<br>90s rest</p>`,
+
+    `<h2>💨 Tempo</h2>
+     <p>The speed at which we move the load through each phase of a lift, normally including lifting, pausing, and lowering within an exercise.</p>
+     <img src="tempo.png" alt="Tempo" style="width:80%; margin:1rem 0;">
+     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press<br>2121 - 90s Rest</p>
+     <p><i>💡 I have a more detailed video overview of this in the resources section when you’re ready to explore it a little more!</i></p>`,
+
+    `<h2>🔥 Intensity</h2>
+     <p>How challenging the thing we’re doing should be. This could apply to a full workout like a run or specific movements within a workout. We use Reps In Reserve (RIR) and Rate of Perceived Exertion (RPE) for this, and more advanced lifters will sometimes use percentages of their max lifts.</p>
+     <img src="intensity.png" alt="Intensity" style="width:80%; margin:1rem 0;">
+     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press
+     <br>2121 - RPE9 - 90s Rest</p>
+     <p><i>💡 I have a video overview of nailing your understanding of intensity in the resources section too!</i></p>`,
+
+    `<img src="hiya.png" alt="Hiya" style="width:120px; margin:1rem 0;">
+    <h2>Other Jargon You Might Stumble Across In Your Sessions</h2>
+     <img src="extras.png" alt="Extras" style="width:90%; margin:1rem 0;">
+     <p>🦹🏼 <b>Supersets:</b> Exercises performed one after another with no rest.</p>
+     <p>💯<b> Failure Sets:</b> Labeled ‘F’ and mean do as many reps as it takes to reach muscle failure.</p>
+     <p>❤️‍🔥 <b>AMRAPs:</b> ‘As Many Rounds (or reps) As Possible’, usually within a time limit.</p>`,
+
+    `<img src="cute.png" alt="Cute" style="width:120px; margin:1rem 0;">
+     <h2>😎 Final Tip</h2>
+     <p>🚨 Read the workout notes...plz 🚨</p>`,
+
+    `<h2>📝 I use workout notes to communicate key tips or highlight important info</h2>
+     <img src="workout-notes.png" alt="Workout Notes" style="width:80%; margin:1rem 0;">
+     <p>Sometimes I might use them to explain <b>why</b> we are doing something so you know the purpose and the reason behind the work we're doing</p>
+     <p style='color:#ffcd68;'>If you don’t bother reading a workout note, it’s kinda like going to a movie when it’s already been on 30 minutes. You’ll probs get the jist of it, but you’ll never have the full picture. </p>
+     <p>🤡 Don’t be a clown — read your workout notes always!</p>`,
+
+    `<h2>📱 Everfit App Guide</h2>
+     <img src="client-app.png" alt="Client App" style="width:80%; margin:1rem 0;">
+     <p>My app its self is pretty intuitive in terms of user functionality. However, if anyone struggles with using it, the guide is super handy. Click the button below to head there right now, or bookmark it for later ⤵️</p>
+     <div class='app-links'><a class='pill-button' href='https://help.everfit.io/en/collections/2079376-client-app' target='_blank'>Everfit Guide</a></div>`,
+
+    `<img src="heart.png" alt="Sassy" style="width:120px; margin:1rem 0;">
+     <h2 style='color:#ffcd68;'>And that, my lovely friends, is how you read workout programming like a champ. Happy training!</h2>
+     <p>Lift Weights, Do Crime etc.</p>
+     <h2>💜</h2>
+     <div class='app-links'><button class="pill-button" onclick="smoothScrollTo(document.getElementById('slider'), 0, 700)">Back to the start</button></div>`
+  ];
+
+  const slider = document.getElementById('slider');
+  const indicators = document.getElementById('indicators');
+
+  // Custom smooth scroll function
+  function smoothScrollTo(element, target, duration = 700) {
+    const start = element.scrollLeft;
+    const change = target - start;
+    const startTime = performance.now();
+
+    function animateScroll(currentTime) {
+      const elapsed = currentTime - startTime;
+      const progress = Math.min(elapsed / duration, 1);
+      element.scrollLeft = start + change * progress;
+      if (progress < 1) {
+        requestAnimationFrame(animateScroll);
+      }
+    }
+    requestAnimationFrame(animateScroll);
+  }
+
+  slides.forEach((html, i) => {
+    const slide = document.createElement('div');
+    slide.className = 'slide';
+    if (i < slides.length - 1) {
+      let navButtons = `
         <div class="nav-buttons">
-          ${i > 0 ? `<button class="nav-button" onclick="document.getElementById('slider').scrollTo({ left: (document.getElementById('slider').clientWidth * ${i - 1}), behavior: 'smooth' })">⬅️</button>` : ''}
-          ${i < slides.length - 1 ? `<button class="nav-button" onclick="document.getElementById('slider').scrollTo({ left: (document.getElementById('slider').clientWidth * ${i + 1}), behavior: 'smooth' })">➡️</button>` : ''}
-        </div>`;
-      slider.appendChild(slide);
+          ${i > 0 ? `<button class="nav-button" aria-label="Previous slide" onclick="smoothScrollTo(document.getElementById('slider'), document.getElementById('slider').clientWidth * ${i - 1}, 700)">⬅️</button>` : ''}
+          <button class="nav-button" aria-label="Next slide" onclick="smoothScrollTo(document.getElementById('slider'), document.getElementById('slider').clientWidth * ${i + 1}, 700)">➡️</button>
+        </div>
+      `;
+      // Add the sentence only on the first slide
+      if (i === 0) {
+        navButtons += `<div style="margin-top:0.5rem;"><span style="font-style:italic;font-size:0.75rem;">Swipe through at your leisure bestie!</span></div>`;
+      }
+      slide.innerHTML = html + navButtons;
+    } else {
+      slide.innerHTML = html;
+    }
+    slider.appendChild(slide);
 
-      const dot = document.createElement('div');
-      dot.className = 'dot';
-      indicators.appendChild(dot);
-    });
+    const dot = document.createElement('div');
+    dot.className = 'dot';
+    indicators.appendChild(dot);
+  });
 
-    const dots = document.querySelectorAll('.dot');
-    slider.addEventListener('scroll', () => {
-      const index = Math.round(slider.scrollLeft / slider.clientWidth);
-      const progress = ((index + 1) / slides.length) * 100;
-      document.getElementById('progressBarEl').style.width = `${progress}%`;
-      dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
-    });
+  const dots = document.querySelectorAll('.dot');
+  slider.addEventListener('scroll', () => {
+    const index = Math.round(slider.scrollLeft / slider.clientWidth);
+    const progress = ((index + 1) / slides.length) * 100;
+    document.getElementById('progressBarEl').style.width = `${progress}%`;
+    dots.forEach((dot, i) => dot.classList.toggle('active', i === index));
+  });
   </script>
 </body>
 </html>
