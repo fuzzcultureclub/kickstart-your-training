@@ -132,6 +132,13 @@
   }
   .pill-button:hover { background-color: #ffcd68; }
   strong { color: #ffcd68; }
+  .responsive-img {
+    width: 80%;
+    max-width: 400px;
+    margin: 1rem 0;
+    height: auto;
+    display: block;
+  }
   </style>
 </head>
 <body>
@@ -141,25 +148,27 @@
   <script>
   const slides = [
     `<img src="wave.png" alt="Waving memoji" style="width:120px; margin:1rem 0;">
-     <h1>Welcome to my super simple no-bullshit guide to kickstarting your training.</h1>
+     <h1>Welcome to my super simple, no-bullshit guide to kickstarting your training.</h1>
      <p>This will take you about 5–10 minutes to run through, so grab a fun drink and dig in 🥤</p>`,
 
     `<img src="idea.png" alt="Idea icon" style="width:112px; margin:1rem 0;">
-     <h2>This guide contains all the essential ‘need to know’ info for a first-time gym-goer to understand how to read their workout programming.</h2>
-     <p>I have some deeper dives on these topics in the resource section of the app, if you want to know more.</p>
-     <img src="resources.png" alt="Resources" style="width:70vw; max-width:70vw; margin:1rem 0;">
-     <p>But in this guide I am giving you the bare essentials to kickstart your training journey so you can hop in straight away!</p>`,
+     <h2>This guide covers all the essential ‘need to know’ info for first-time gym-goers, so you can read your workout programming without feeling like a sad lost little boy.</h2>
+     <p>I’ve got deeper dives on these topics in the app’s resource section if you want to know more.</p>
+     <img src="resources.png" alt="Resources" class="responsive-img">
+     <p>But here, I’m giving you just the essentials so you can dive in straight away!</p>`,
 
     `<img src="laptop.png" alt="Laptop" style="width:140px; margin:1rem 0;">
-     <h2>Have a read through the next few slides and sure to let me know if you have any questions!</h2>
-     <p>If you’re a 121 or Fast & Ferocious team member, you can DM me directly, or if you’re on one of my Superhuman workout programs, you can post any questions you have in the relevant thread in the Telegram community group.</p>`,
+     <h2>Your Mission: Have a read through the next few slides and let me know if you have any questions!</h2>
+     <p>If you’re a 121 or Fast & Ferocious team member, DM me directly.</p>
+     <p>If you’re on one of my Superhuman workout programs, post your questions in the <a href="https://t.me/+kdwwAjIYEf9hOGRk" target="_blank" style="color:#ffcd68; font-weight:bold;">Telegram Community Group</a>.</p>`,
 
     `<img src="shrug.png" alt="Shrug" style="width:140px; margin:1rem 0;">
-     <h2>'Why is this so important Lucinda?'</h2>
-     <p>We wanna know how to read workout programming well, so we don’t have to second-guess it during a session, have it be another barrier to training OR get in the way of your ferocious strength gains.</p>
-     <p>The good thing about this is that it’s pretty standard across the board, so if you spend 5 minutes with me right now, you'll be set for life 😉</p>`,
+     <h2>Why is this so important, Lucinda?</h2>
+     <p>If you know how to read workout programming, you won’t have to second-guess anything during your session.</p>
+     <p style="color:#ffcd68;">It won’t be another barrier to training, and you won’t be leaving any gains on the table because you’re executing the sessions exactly as they were intended.</p>
+     <p>The best part? This stuff is pretty standard everywhere, so spend 5 minutes with me now and you’ll be sorted for life 😉</p>`,
 
-    `<h2>We break workout programming down into these five categories ⤵️</h2>
+    `<h2>We break workout programming down into these five categories:</h2>
      <p>🔂 Reps</p>
      <p>🔁 Sets</p>
      <p>😴 Rest</p>
@@ -167,60 +176,60 @@
      <p>🔥 Intensity</p>`,
 
     `<h2>🔂 Reps</h2>
-     <p>How many repetitions of an exercise we do consecutively.</p>
-     <img src="reps.png" alt="Reps" style="width:80%; margin:1rem 0;">
-     <p style='color:#ffcd68;'>Example: 8-12 x Incline Dumbbell Press</p>`,
+     <p>How many repetitions of an exercise you do in a row.</p>
+     <img src="reps.png" alt="Reps" class="responsive-img">
+     <p style='color:#ffcd68;'>Example: 8–12 x Incline Dumbbell Press</p>`,
 
     `<h2>🔁 Sets</h2>
-     <p>A group of reps performed together, usually with a rest period in between to recover.</p>
-     <img src="sets.png" alt="Sets" style="width:80%; margin:1rem 0;">
-     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press</p>`,
+     <p>A group of reps performed together, usually with a rest period in between.</p>
+     <img src="sets.png" alt="Sets" class="responsive-img">
+     <p style='color:#ffcd68;'>Example: 3 x 8–12 x Incline Dumbbell Press</p>`,
 
     `<h2>😴 Rest</h2>
-     <p>The time we spend recovering after and between sets.</p>
-     <img src="rest.png" alt="Rest" style="width:80%; margin:1rem 0;">
-     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press<br>90s rest</p>`,
+     <p>The time you spend recovering after and between sets.</p>
+     <img src="rest.png" alt="Rest" class="responsive-img">
+     <p style='color:#ffcd68;'>Example: 3 x 8–12 x Incline Dumbbell Press<br>90s rest</p>`,
 
     `<h2>💨 Tempo</h2>
-     <p>The speed at which we move the load through each phase of a lift, normally including lifting, pausing, and lowering within an exercise.</p>
-     <img src="tempo.png" alt="Tempo" style="width:80%; margin:1rem 0;">
-     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press<br>2121 - 90s Rest</p>
-     <p><i>💡 I have a more detailed video overview of this in the resources section when you’re ready to explore it a little more!</i></p>`,
+     <p>The speed you move the weight through each part of a lift—lifting, pausing, and lowering.</p>
+     <img src="tempo.png" alt="Tempo" class="responsive-img">
+     <p style='color:#ffcd68;'>Example: 3 x 8–12 x Incline Dumbbell Press<br>2121 tempo – 90s rest</p>
+     <p><i>💡 There’s a more detailed video on tempo in the resources section if you want to learn more!</i></p>`,
 
     `<h2>🔥 Intensity</h2>
-     <p>How challenging the thing we’re doing should be. This could apply to a full workout like a run or specific movements within a workout. We use Reps In Reserve (RIR) and Rate of Perceived Exertion (RPE) for this, and more advanced lifters will sometimes use percentages of their max lifts.</p>
-     <img src="intensity.png" alt="Intensity" style="width:80%; margin:1rem 0;">
-     <p style='color:#ffcd68;'>Example: 3 x 8-12 x Incline Dumbbell Press
-     <br>2121 - RPE9 - 90s Rest</p>
-     <p><i>💡 I have a video overview of nailing your understanding of intensity in the resources section too!</i></p>`,
+     <p>How challenging your workout or exercise should feel.<br>
+     We use Reps In Reserve (RIR) and Rate of Perceived Exertion (RPE) for this.</p>
+     <img src="intensity.png" alt="Intensity" class="responsive-img">
+     <p style='color:#ffcd68;'>Example: 3 x 8–12 x Incline Dumbbell Press<br>2121 tempo – RPE 9 – 90s rest</p>
+     <p><i>💡 There’s a video on intensity in the resources section too!</i></p>`,
 
-    `<img src="hiya.png" alt="Hiya" style="width:120px; margin:1rem 0;">
-    <h2>Other Jargon You Might Stumble Across In Your Sessions</h2>
-     <img src="extras.png" alt="Extras" style="width:90%; margin:1rem 0;">
-     <p>🦹🏼 <b>Supersets:</b> Exercises performed one after another with no rest.</p>
-     <p>💯<b> Failure Sets:</b> Labeled ‘F’ and mean do as many reps as it takes to reach muscle failure.</p>
-     <p>❤️‍🔥 <b>AMRAPs:</b> ‘As Many Rounds (or reps) As Possible’, usually within a time limit.</p>`,
+    `<h2>👽 Other Jargon You Might Stumble Across In Your Sessions</h2>
+     <img src="extras.png" alt="Extras" class="responsive-img">
+     <p>🦹🏼 Supersets: Exercises done one after another with no rest.</p>
+     <p>💯 Failure Sets: Labeled ‘F’—do as many reps as you can until muscle failure.</p>
+     <p>❤️‍🔥 AMRAPs: ‘As Many Rounds (or reps) As Possible’, usually within a time limit.</p>`,
 
     `<img src="cute.png" alt="Cute" style="width:120px; margin:1rem 0;">
      <h2>😎 Final Tip</h2>
-     <p>🚨 Read the workout notes...plz 🚨</p>`,
+     <p>🚨 Read the workout notes... please! 🚨</p>`,
 
-    `<h2>📝 I use workout notes to communicate key tips or highlight important info</h2>
-     <img src="workout-notes.png" alt="Workout Notes" style="width:80%; margin:1rem 0;">
-     <p>Sometimes I might use them to explain <b>why</b> we are doing something so you know the purpose and the reason behind the work we're doing</p>
-     <p style='color:#ffcd68;'>If you don’t bother reading a workout note, it’s kinda like going to a movie when it’s already been on 30 minutes. You’ll probs get the jist of it, but you’ll never have the full picture. </p>
-     <p>🤡 Don’t be a clown — read your workout notes always!</p>`,
+    `<h2>📝 I use workout notes to share key tips or highlight important info.</h2>
+     <img src="workout-notes.png" alt="Workout Notes" class="responsive-img">
+     <p>Sometimes I’ll explain why we’re doing something, so you know the purpose behind the work.</p>
+     <p style='color:#ffcd68;'>If you skip the workout notes, it’s like showing up to a movie 30 minutes late. You’ll get the gist, but not the full picture.</p>
+     <p>🤡 Don’t be a clown… always read your workout notes!</p>`,
 
     `<h2>📱 Everfit App Guide</h2>
-     <img src="client-app.png" alt="Client App" style="width:80%; margin:1rem 0;">
-     <p>My app its self is pretty intuitive in terms of user functionality. However, if anyone struggles with using it, the guide is super handy. Click the button below to head there right now, or bookmark it for later ⤵️</p>
-     <div class='app-links'><a class='pill-button' href='https://help.everfit.io/en/collections/2079376-client-app' target='_blank'>Everfit Guide</a></div>`,
+     <img src="client-app.png" alt="Client App" class="responsive-img">
+     <p>My app is pretty intuitive, but if you ever get stuck, the guide is super handy.<br>
+     Click the button below to check it out, or bookmark it for later ⤵️</p>
+     <div class='app-links'><button class="pill-button" href="https://help.everfit.io/en/collections/2079376-client-app" target="_blank">Everfit Guide</a></div>`,
 
     `<img src="heart.png" alt="Sassy" style="width:120px; margin:1rem 0;">
      <h2 style='color:#ffcd68;'>And that, my lovely friends, is how you read workout programming like a champ. Happy training!</h2>
-     <p>Lift Weights, Do Crime etc.</p>
+     <p>Lift weights, do crime, etc.</p>
      <h2>💜</h2>
-     <div class='app-links'><button class="pill-button" onclick="smoothScrollTo(document.getElementById('slider'), 0, 700)">Back to the start</button></div>`
+     <div class='app-links'><button class="pill-button" onclick="smoothScrollTo(document.getElementById('slider'), 0, 700)">Back To The Start</button></div>`
   ];
 
   const slider = document.getElementById('slider');
